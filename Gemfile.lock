@@ -31,8 +31,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     fastimage (2.2.0)
     ffi (1.13.1)
-    font-awesome-sass (5.13.0)
-      sassc (>= 1.11)
+    font-awesome-sass (4.4.0)
+      sass (>= 3.2)
     forwardable-extended (2.6.0)
     fspath (3.1.2)
     gemoji (3.0.1)
@@ -160,8 +160,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.4.0)
-      ffi (~> 1.9)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
@@ -184,7 +182,7 @@ DEPENDENCIES
   amp-jekyll
   autoprefixer-rails
   crass
-  font-awesome-sass
+  font-awesome-sass (~> 4.4.0)
   html-proofer
   image_optim
   image_optim_bin

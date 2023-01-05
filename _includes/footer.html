@@ -49,20 +49,6 @@
         </a>
       </li>
     {% endif %}
-    {% if site.social_links.freecodecamp %}
-      <li>
-        <a href="https://www.freecodecamp.org/{{ site.social_links.freecodecamp }}" target="_blank" rel="noopener noreferrer" title="freeCodeCamp" aria-label="FreeCodeCamp Profile">
-          <i class="fab fa-free-code-camp" aria-hidden="true"></i>
-        </a>
-      </li>
-    {% endif %}
-    {% if site.social_links.bitcoin %}
-      <li>
-        <a href="bitcoin:{{ site.social_links.bitcoin }}" target="_blank" rel="noopener noreferrer" title="Bitcoin" aria-label="Bitcoin wallet">
-          <i class="fab fa-btc" aria-hidden="true"></i>
-        </a>
-      </li>
-    {% endif %}
     {% if site.rss_enabled == true %}
       <li>
         <a href="{{ 'feed.xml' | relative_url }}" target="_blank" title="RSS" aria-label="RSS Feed">
@@ -73,14 +59,8 @@
   </ul>
 
   <p class="text-center">
-    <a href="/privacy/cookies" rel="noopener noreferrer"
-        target="_blank" title="Privacy Policy" aria-label="Privacy Policy">
-      Privacy Policy
-    </a>.
-    I'm using customized
-    <a target="_blank" href="{{ site.attribution.template.project_url }}" rel="noopener noreferrer" title="Chalk" aria-label="Clalk - Theme">Chalk</a>,
-    a template by
-    <a target="_blank" href="{{ site.attribution.template.creator_url }}" rel="noopener noreferrer" title="Nielsen Ramon" aria-label="Nielsen Ramon Profile">Nielsen Ramon</a>.
+    I'm using a customized version of
+    <a target="_blank" href="{{ site.attribution.template.project_url }}" rel="noopener noreferrer" title="Chalk" aria-label="Clalk - Theme">Chalk</a>.
   </p>
 
 </footer>

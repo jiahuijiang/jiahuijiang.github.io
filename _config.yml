@@ -1,24 +1,23 @@
 # Mandatory settings
 
 blog_theme: light # Or use dark
-name: Rahul Jain
-url: https://rahulja.in
-description: This is the personal blog and profile of Rahul Jain, a full-stack engineer and web enthusiast living in Singapore.
-timezone: Asia/Kolkata
+name: Jiahui Jiang
+url: https://jiahuijiang.github.io
+description: Jiahui's project site.
+timezone: America/New_York
 encoding: utf-8
 
 # Optional settings
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-local_fonts: true # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
+local_fonts: false # Change to true if you wish to use local fonts
+rss_enabled: false # Change to false if not
 social_links:
-  facebook: xRahulJain # Add your Facebook handle
-  github: xRahul # Add your GitHub handle
-  linkedin: xRahulJain # Add your LinkedIn handle
-  twitter: xRahulJain # Add your Twitter handle
-  email: rahul_jain@live.in # Add your Email address
-  stackoverflow: 1435626/rahul # Add your stackoverflow id/name
+  # facebook: # Add your Facebook handle
+  github: jiahuijiang # Add your GitHub handle
+  linkedin: jiahui-j # Add your LinkedIn handle
+  #twitter:  # Add your Twitter handle
+  #email:  # Add your Email address
 
 
 # Process and render draft posts
@@ -31,9 +30,9 @@ social_links:
 # lsi: true
 
 author:
-  name: Rahul Jain
-  email: rahul_jain@live.in
-  uri: https://rahulja.in/about
+  name: Jiahui Jiang
+  #email:
+  uri: https://jiahuijiang.github.io/about
 
 # Important settings (change at own risk)
 
@@ -106,7 +105,7 @@ assets:
     - node_modules
     - _assets/javascripts
     - _assets/stylesheets
-  baseurl: https://rahulja.in
+  baseurl: https://jiahuijiang.github.io/
 
 collections:
   my_tags:
@@ -201,10 +200,10 @@ attribution:
     project_url: https://github.com/nielsenramon/chalk
     creator_url: http://nielsenramon.com
 
-discus_identifier: rahulja-in # Add your Disqus identifier
-ga_analytics: UA-75936371-1 # Add your GA Tracking Id
-iubenda_siteid: 1154232
-iubenda_policyid: 10242650
-gtag_universal: GTM-TN2ZXX
-gtag_amp: GTM-K4G6PK2
-adsense_client_id: ca-pub-5658859600026770
+# discus_identifier:  # Add your Disqus identifier
+# ga_analytics:  # Add your GA Tracking Id
+# iubenda_siteid:
+# iubenda_policyid:
+# gtag_universal:
+# gtag_amp:
+# adsense_client_id:

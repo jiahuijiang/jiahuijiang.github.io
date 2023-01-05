@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "amp-jekyll"
 gem "autoprefixer-rails"
 gem "crass"
-gem "font-awesome-sass"
+gem "font-awesome-sass", '~>4.4.0'
 gem "html-proofer"
 gem "image_optim_bin" # Optional
 gem "image_optim_pack"
