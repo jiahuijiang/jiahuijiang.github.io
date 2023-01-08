@@ -1,0 +1,45 @@
+---
+title: "Baking"
+description: "Baking and recipes"
+permalink: /baking
+sitemap: false
+image-dir: assets/images/posts/baking/
+baked-goods:
+  - id: gochujang-cookies
+    title: gochujang cookies
+    url: https://lapis-lychee-877.notion.site/Gochujang-Caramel-Cookies-29db302c137e4aad8698ac94e524b0fd
+  - id: hojicha-tiramisu
+    title: hojicha tiramisu
+  - id: cheddar-shortbread
+    title: cheddar shortbread
+  - id: ube-cheesecake
+    title: ube cheesecake
+---
+
+<div class="tags-page text-center">
+  <h1 class="tags-page-header">
+    <small><i class="fa fa-lemon-o" aria-hidden="true"></i></small> Baking
+  </h1>
+
+  <div class ="image-gallery">
+    {% for item in page.baked-goods%}
+
+      {% if item.url %}
+        <div class="box">
+          <a target="_blank" href={{item.url}} title={{item.id}}>
+            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}}  class="img-gallery" />
+          </a>
+          <a target="_blank" class="no-text-decoration" href={{item.url}} title={{item.title}}><u>{{item.title}}</u></a>
+        </div>
+      {% else %}
+        <div class="static-box">
+          <a title={{item.name}}>
+            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}}  class="img-gallery" />
+          </a>
+          <div class="no-text-decoration" title={{item.title}}>{{item.title}}</div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

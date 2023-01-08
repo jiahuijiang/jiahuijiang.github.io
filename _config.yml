@@ -103,8 +103,8 @@ assets:
     - "IE > 9"
   sources:
     - node_modules
-    - _assets/javascripts
-    - _assets/stylesheets
+    - assets/javascripts
+    - assets/stylesheets
   baseurl: https://jiahuijiang.github.io/
 
 collections:
