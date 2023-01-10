@@ -1,8 +1,9 @@
 ---
 title: "Projects"
-description: "Projects - arts or crafts"
+description: "Projects - arts, coding or crafts"
 permalink: /projects
-sitemap: false
+pagination:
+  enabled: true
 ---
 
 <div class="tags-page text-center">
@@ -10,31 +11,33 @@ sitemap: false
     <small><i class="fa fa-heart-o" aria-hidden="true"></i></small> Projects
   </h1>
 
-{% assign project_array = "" | split:"," %}
-{% for post in site.posts %}
-  {% if post.projects != null %}
-    {% assign post_projects = post.projects | uniq %}
-    {% for post_project in post_projects %}
-      {% assign project_array = project_array | push: post_project %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-  <br>
-  {% assign my_projects = site.collections | where: "label", "my_projects" | first %}
-
-  {% for project in my_projects.docs %}
-    {% if project_array contains project.slug %}
-
-      {% assign post_count = "" | split:"," %}
-      {% for mention in project_array %}
-        {% if mention == project.slug %}
-          {% assign post_count = post_count | push: mention %}
-        {% endif %}
-      {% endfor %}
-
-      <a class="no-text-decoration" href="{{ 'project/' | relative_url }}{{ project.slug }}" title="See all posts related to {{ project.name }}">
-        <h4>{{ project.name | upcase }} <small>({{ post_count | size }})</small></h4>
+  <ul class="article-list">
+    {% for post in paginator.posts %}
+    <li class="article-list-item">
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+        <h5>
+          {{ post.title }}
+          <small><i class="icon fas fa-angle-double-right" aria-hidden="true"></i></small>
+        </h5>
+        <p>
+          {% if post.description %}
+          {{ post.description }}
+          {% else %}
+          {{ post.thumbnail }}
+          {% endif %}
+        </p>
       </a>
+    </li>
+    {% endfor %}
+    {% if paginator.total_pages > 1 %}
+    <li class="article-pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | remove: 'index.html' }}"><i class="fas fa-angle-double-left" aria-hidden="true"></i> Newer posts</a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | remove: 'index.html' }}" class="article-pagination-right">Older posts <i class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+      {% endif %}
+    </li>
     {% endif %}
-  {% endfor %}
+  </ul>
 </div>
