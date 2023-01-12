@@ -10,7 +10,6 @@
 .article-list {
   display: block;
   padding: 0;
-  margin: 50px 0;
   list-style: none;
   li {
     position: relative;
@@ -55,7 +54,7 @@
     h5 {
       position: relative;
       display: block;
-      padding-right: 25px;
+      padding-right: 0px;
       color: $article-header-title-color;
       border-bottom: 1px solid transparent;
       .icon {

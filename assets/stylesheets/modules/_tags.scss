@@ -12,3 +12,14 @@
     margin: 0 0 15px 0;
   }
 }
+
+.tags-page-row {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  .tags-page-column {
+    width: 50%;
+    float: left;
+  }
+}

@@ -4,13 +4,21 @@ const baseYSpeed = 0.5
 const snowflakes = []
 
 function setup() {
-	createCanvas(window.innerWidth, window.innerHeight);
+	const length = max(window.innerHeight, window.innerWidth)
+	const canvasLength = Number(document.querySelector('.input').getAttribute('snowfall-canvas-length') ?? length)
+	const canvas = createCanvas(canvasLength, canvasLength);
 
+	const parentID = document.querySelector('.input').getAttribute('snowfall-parentId')
+
+	console.log(parentID)
+	if (parentID) {
+		canvas.parent(parentID);
+	}
 }
 
-
 function draw() {
-	background(0);
+	const opacity = Number(document.querySelector('.input').getAttribute('snowfall-opacity') ?? '0')
+	background(opacity, 200);
 
 	if (snowflakes.length < 700) {
 		for (let i = 0; i < 1; i++) {
