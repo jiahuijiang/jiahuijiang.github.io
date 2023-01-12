@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jiahuijiang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jiahuijiang.github.io/" rel="alternate" type="text/html" /><updated>2023-01-12T00:21:14-05:00</updated><id>https://jiahuijiang.github.io/feed.xml</id><title type="html">Jiahui Jiang</title><subtitle>Jiahui's project site.</subtitle><author><name>Jiahui Jiang</name><uri>https://jiahuijiang.github.io/</uri></author><entry><title type="html">Clay earrings</title><link href="https://jiahuijiang.github.io/projects/clay-earrings" rel="alternate" type="text/html" title="Clay earrings" /><published>2023-01-08T00:00:00-05:00</published><updated>2023-01-12T00:20:52-05:00</updated><id>https://jiahuijiang.github.io/projects/clay-earrings</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/clay-earrings">&lt;html&gt;
+  &lt;head&gt;
+    something
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang</name><uri>https://jiahuijiang.github.io/</uri></author><category term="craft" /><summary type="html">something</summary></entry><entry><title type="html">Snowfall</title><link href="https://jiahuijiang.github.io/projects/snowfall" rel="alternate" type="text/html" title="Snowfall" /><published>2023-01-08T00:00:00-05:00</published><updated>2023-01-12T00:20:52-05:00</updated><id>https://jiahuijiang.github.io/projects/snowfall</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/snowfall">&lt;html&gt;
+  &lt;head&gt;
+    &lt;div class=&quot;input&quot; snowfall-parentid=&quot;sketch-holder&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;/assets/javascripts/p5.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/assets/javascripts/posts/snowfall.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;sketch-holder&quot;&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang</name><uri>https://jiahuijiang.github.io/</uri></author><category term="coding" /><summary type="html"></summary></entry></feed>
