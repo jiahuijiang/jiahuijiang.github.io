@@ -27,14 +27,14 @@ baked-goods:
       {% if item.url %}
         <div class="box">
           <a target="_blank" href={{item.url}} title={{item.id}}>
-            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}}  class="img-gallery" />
+            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}} class="img-gallery-item" />
           </a>
           <a target="_blank" class="no-text-decoration" href={{item.url}} title={{item.title}}><u>{{item.title}}</u></a>
         </div>
       {% else %}
         <div class="static-box">
           <a title={{item.name}}>
-            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}}  class="img-gallery" />
+            <img src={{page.image-dir}}{{item.id}}.png alt={{item.id}} class="img-gallery-item" />
           </a>
           <div class="no-text-decoration" title={{item.title}}>{{item.title}}</div>
         </div>

@@ -1,59 +1,58 @@
 
-const baseYSpeed = 0.5
+const snowFallBaseYSpeed = 0.5
 
-const snowflakes = []
+let sketchSnowfall = function (p) {
+	const snowflakes = []
 
-function setup() {
-	const length = max(window.innerHeight, window.innerWidth)
-	const canvasLength = Number(document.querySelector('.input').getAttribute('snowfall-canvas-length') ?? length)
-	const canvas = createCanvas(canvasLength, canvasLength);
+	p.setup = function() {
+		const length = p.max(window.innerHeight, window.innerWidth)
+		const canvasLength = Number(document.querySelector('.input').getAttribute('snowfall-canvas-length') ?? length)
 
-	const parentID = document.querySelector('.input').getAttribute('snowfall-parentId')
-
-	console.log(parentID)
-	if (parentID) {
-		canvas.parent(parentID);
+		p.createCanvas(canvasLength, canvasLength);
 	}
-}
 
-function draw() {
-	const opacity = Number(document.querySelector('.input').getAttribute('snowfall-opacity') ?? '0')
-	background(opacity, 200);
+	p.draw = function () {
+		const opacity = Number(document.querySelector('.input').getAttribute('snowfall-opacity') ?? '0')
+		p.background(opacity, 200);
 
-	if (snowflakes.length < 700) {
-		for (let i = 0; i < 1; i++) {
-			snowflakes.push(new Snowflake());
+		if (snowflakes.length < 700) {
+			for (let i = 0; i < 1; i++) {
+				snowflakes.push(new Snowflake());
+			}
+		}
+
+		for (const flake of snowflakes) {
+			flake.fall();
+			flake.show()
 		}
 	}
 
-	for (const flake of snowflakes) {
-		flake.fall();
-		flake.show()
-	}
-}
-
-class Snowflake {
-	constructor() {
-		this.initialX = random(width);
-		this.y = -50
-		this.initialAngle = random(0, 2 * Math.PI);
-		this.r = random(2, 7);
-		this.ySpeed = baseYSpeed * Math.log(this.r, 2);
-		this.amplitude = sqrt(random(pow(width / 2,2)))
-	}
-
-	fall() {
-		if (this.y > height) {
-			this.y = -50;
+	class Snowflake {
+		constructor() {
+			this.initialX = p.random(p.width);
+			this.y = -50
+			this.initialAngle = p.random(0, 2 * Math.PI);
+			this.r = p.random(2, 7);
+			this.ySpeed = snowFallBaseYSpeed * Math.log(this.r, 2);
+			this.amplitude = p.sqrt(p.random(p.pow(p.width / 2,2)))
 		}
 
-		this.x = this.initialX + Math.sin(this.initialAngle + this.y * this.ySpeed / 100) * this.amplitude;
-		this.y += this.ySpeed
-	}
+		fall() {
+			if (this.y > p.height) {
+				this.y = -50;
+			}
 
-	show() {
-		stroke(255);
-		circle(this.x, this.y, this.r);
+			this.x = this.initialX + Math.sin(this.initialAngle + this.y * this.ySpeed / 100) * this.amplitude;
+			this.y += this.ySpeed
+		}
+
+		show() {
+			p.stroke(255);
+			p.circle(this.x, this.y, this.r);
+		}
 	}
 }
+
+new p5(sketchSnowfall, document.querySelector('.input').getAttribute('snowfall-parent') ?? 'snowfall-parent')
+
 

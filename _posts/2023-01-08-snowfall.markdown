@@ -1,17 +1,23 @@
 ---
-title: "Snowfall"
+layout: post
+title: "Good at falling"
 icon: fa-snowflake-o
 tags: [coding]
 ---
 
 <html>
-  <head>
-    <div class="input" snowfall-parentId="sketch-holder" ></div>
-    <script src="/assets/javascripts/p5.min.js"></script>
-    <script src="/assets/javascripts/posts/snowfall.js"></script>
-  </head>
-  <body>
-    <div id="sketch-holder">
-    </div>
-  </body>
+<head>
+<div class="input" snowfall-parent="snowfall-parent" snowfall-canvas-length="400" confetti-canvas-length="400" ></div>
+<script src="/assets/javascripts/p5.min.js"></script>
+</head>
+<body>
+Snowfall
+<div id="snowfall-parent">
+  <script src="/assets/javascripts/posts/snowfall.js"></script>
+</div>
+Throw some confetti (move your mouse up and down, now faster..)
+<div id="confetti-parent">
+  <script src="/assets/javascripts/posts/throw-some-confetti.js"></script>
+</div>
+</body>
 </html>
