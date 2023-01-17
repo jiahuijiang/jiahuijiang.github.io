@@ -15,7 +15,7 @@ let sketchSnowfall = function (p) {
 		const opacity = Number(document.querySelector('.input').getAttribute('snowfall-opacity') ?? '0')
 		p.background(opacity, 200);
 
-		if (snowflakes.length < 700) {
+		if (snowflakes.length < 350) {
 			for (let i = 0; i < 1; i++) {
 				snowflakes.push(new Snowflake());
 			}
@@ -30,7 +30,7 @@ let sketchSnowfall = function (p) {
 	class Snowflake {
 		constructor() {
 			this.initialX = p.random(p.width);
-			this.y = -50
+			this.y = p.random(-100, 0)
 			this.initialAngle = p.random(0, 2 * Math.PI);
 			this.r = p.random(2, 7);
 			this.ySpeed = snowFallBaseYSpeed * Math.log(this.r, 2);

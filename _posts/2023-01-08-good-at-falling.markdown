@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post-centered
+id: good-at-falling
 title: "Good at falling"
 icon: fa-snowflake-o
 tags: [coding]
@@ -15,7 +16,7 @@ Snowfall
 <div id="snowfall-parent">
   <script src="/assets/javascripts/posts/snowfall.js"></script>
 </div>
-Throw some confetti (move your mouse up and down, now faster..)
+Throw some confetti (move your mouse around, now faster..)
 <div id="confetti-parent">
   <script src="/assets/javascripts/posts/throw-some-confetti.js"></script>
 </div>

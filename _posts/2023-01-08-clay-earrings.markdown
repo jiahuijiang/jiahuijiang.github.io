@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-centered
 title: "Clay earrings"
 icon: fa-snowflake-o
 tags: [craft]
@@ -28,7 +28,7 @@ I was surprised by how vibrant the color remains even after baking.<br>
 
 {% for image in page.images%}
   <div style="margin-bottom: 30px">
-    <img src="{{page.image-dir}}{{image.id}}.png" alt={{image.id}} weight="400" height="400" style="margin-bottom: 0" />
+    <img src="{{page.image-dir}}{{image.id}}.png" alt={{image.id}} weight="400" height="400" style="margin: 0 auto" />
     {{image.name}}
   </div>
 {% endfor %}

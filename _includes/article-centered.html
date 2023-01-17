@@ -1,0 +1,15 @@
+<article class="article" style="text-align: center">
+  {% include article/header.html %}
+  <div class="article-content">
+    {% if page.amp %}
+      {{ content  | markdownify | amp_images }}
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </div>
+  {% include article/footer.html %}
+  {% unless page.amp %}
+    {% include article/disqus.html %}
+  {% endunless %}
+</article>
+{% include article/structuredData.html %}

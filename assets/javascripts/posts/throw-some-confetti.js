@@ -1,5 +1,6 @@
 const confettiBaseYSpeed = 0.5
-const yWindSpeedMultiplier = 0.1
+const xWindSpeedMultiplier = 0.03
+const yWindSpeedMultiplier = 0.05
 
 const confetti = []
 
@@ -9,7 +10,7 @@ let sketchConfetti = function (p) {
 		const canvasLength = Number(document.querySelector('.input').getAttribute('confetti-canvas-length') ?? length)
 		p.createCanvas(canvasLength, canvasLength);
 
-		for (let i = 0; i < 150; i++) {
+		for (let i = 0; i < 300; i++) {
 			confetti.push(new Confetti());
 		}
 	}
@@ -34,34 +35,31 @@ let sketchConfetti = function (p) {
 
 		constructor() {
 			this.time = p.random(1, 100)
-			this.x = p.random(p.width * 3 / 4) + p.width / 8;
-			this.y = p.random(0, p.width)
+			this.x = p.random(p.width);
+			this.y = p.random(-50, p.width)
+			this.xSpeedFromWind = 0;
 			this.ySpeedFromWind = 0;
-			this.initialAngle = p.random(0, 2 * Math.PI);
 			this.r = p.random(5, 12);
 			this.ySpeed = confettiBaseYSpeed * Math.log(this.r, 2);
-			this.amplitude = p.sqrt(p.random(p.pow(p.width / 3,2)))
 			this.shape = Math.floor(p.random(3)) + 1
 			this.color = this.confettiColors[Math.floor(p.random(this.confettiColors.length))]
 		}
 
 		show() {
-			// resets when it hits the bottom
-			if (this.y > p.height) {
-				this.x = p.random(p.width / 2) + p.width / 4;
-				this.y = -50;
-			}
-
 			p.push()
 			p.translate(this.x, this.y);
 
-			if (p.winMouseX < p.width && p.winMouseX > 0 && p.winMouseY < p.height && p.winMouseY > 0) {
+			if (p.mouseX < p.width && p.winMouseX > 0 && p.winMouseY < p.height && p.winMouseY > 0) {
 				if (p.abs(this.x - p.winMouseX) < 100) {
 					this.ySpeedFromWind = getWindSpeed().speedY / (p.log(p.abs(this.y - p.winMouseY) + 1) + 1) * p.sqrt(p.abs(p.abs(this.x - p.winMouseX) - 100))* yWindSpeedMultiplier
 				}
+				if (p.abs(this.y - p.winMouseY) < 100) {
+					this.xSpeedFromWind = getWindSpeed().speedX / (p.log(p.abs(this.x - p.winMouseX) + 1) + 1) * p.sqrt(p.abs(p.abs(this.y - p.winMouseY) - 100))* xWindSpeedMultiplier
+				}
 			}
+			this.xSpeedFromWind *= 0.99
 
-			p.translate(this.amplitude * p.sin(this.initialAngle + this.time / 10), this.ySpeed);
+			p.translate(0, this.ySpeed);
 
 			p.rotate(this.time);
 			p.rectMode(p.CENTER);
@@ -81,13 +79,21 @@ let sketchConfetti = function (p) {
 
 			this.time = this.time + 0.1;
 			this.y += (this.ySpeed + this.ySpeedFromWind)
+			this.x += (this.xSpeedFromWind)
+
+			if (this.y > p.height || this.x < 0 || this.x > p.width) {
+				this.x = p.random(p.width);
+				this.y = p.random(-100, 0);
+				this.xSpeedFromWind = 0;
+				this.ySpeedFromWind = 0;
+			}
 		}
 	}
 
 	function getWindSpeed() {
 		return {
 			speedX: p.winMouseX - p.pwinMouseX,
-			speedY: p.winMouseY -p. pwinMouseY
+			speedY: p.winMouseY - p. pwinMouseY > 0 ? p.winMouseY - p. pwinMouseY : 2 * (p.winMouseY - p.pwinMouseY)
 		}
 	}
 }
