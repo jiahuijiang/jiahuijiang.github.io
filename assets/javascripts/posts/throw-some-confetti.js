@@ -49,12 +49,12 @@ let sketchConfetti = function (p) {
 			p.push()
 			p.translate(this.x, this.y);
 
-			if (p.mouseX < p.width && p.winMouseX > 0 && p.winMouseY < p.height && p.winMouseY > 0) {
-				if (p.abs(this.x - p.winMouseX) < 100) {
-					this.ySpeedFromWind = getWindSpeed().speedY / (p.log(p.abs(this.y - p.winMouseY) + 1) + 1) * p.sqrt(p.abs(p.abs(this.x - p.winMouseX) - 100))* yWindSpeedMultiplier
+			if (p.mouseX < p.width && p.mouseX > 0 && p.mouseY < p.height && p.mouseY > 0) {
+				if (p.abs(this.x - p.mouseX) < 100) {
+					this.ySpeedFromWind = getWindSpeed().speedY / (p.log(p.abs(this.y - p.mouseY) + 1) + 1) * p.sqrt(p.abs(p.abs(this.x - p.mouseX) - 100))* yWindSpeedMultiplier
 				}
-				if (p.abs(this.y - p.winMouseY) < 100) {
-					this.xSpeedFromWind = getWindSpeed().speedX / (p.log(p.abs(this.x - p.winMouseX) + 1) + 1) * p.sqrt(p.abs(p.abs(this.y - p.winMouseY) - 100))* xWindSpeedMultiplier
+				if (p.abs(this.y - p.mouseY) < 100) {
+					this.xSpeedFromWind = getWindSpeed().speedX / (p.log(p.abs(this.x - p.mouseX) + 1) + 1) * p.sqrt(p.abs(p.abs(this.y - p.mouseY) - 100))* xWindSpeedMultiplier
 				}
 			}
 			this.xSpeedFromWind *= 0.99
@@ -92,8 +92,8 @@ let sketchConfetti = function (p) {
 
 	function getWindSpeed() {
 		return {
-			speedX: p.winMouseX - p.pwinMouseX,
-			speedY: p.winMouseY - p. pwinMouseY > 0 ? p.winMouseY - p. pwinMouseY : 2 * (p.winMouseY - p.pwinMouseY)
+			speedX: p.mouseX - p.pmouseX,
+			speedY: p.mouseY - p.pmouseY > 0 ? p.mouseY - p.pmouseY : 2 * (p.mouseY - p.pmouseY)
 		}
 	}
 }
