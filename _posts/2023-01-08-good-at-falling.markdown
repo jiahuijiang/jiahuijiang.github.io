@@ -3,6 +3,7 @@ layout: post-centered
 id: good-at-falling
 title: "Good at falling"
 icon: fa-snowflake-o
+preview: good-at-falling-preview
 tags: [coding]
 ---
 

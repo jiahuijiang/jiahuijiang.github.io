@@ -3,7 +3,7 @@ layout: post-centered
 title: "Clay earrings"
 icon: fa-snowflake-o
 tags: [craft]
-thumbnail: /assets/images/posts/clay-earrings/tools_and_materials.png
+thumbnail: /assets/images/posts/clay-earrings/cold_pizza.png
 image-dir: /assets/images/posts/clay-earrings/
 images:
   - id: tools_and_materials
