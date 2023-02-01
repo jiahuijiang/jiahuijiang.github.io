@@ -1,7 +1,7 @@
 # Mandatory settings
 
 blog_theme: light # Or use dark
-name: Jiahui Jiang
+name: Jiahui Jiang - JJ
 url: https://jiahuijiang.github.io
 description: Jiahui's project site.
 timezone: America/New_York
@@ -30,9 +30,9 @@ social_links:
 # lsi: true
 
 author:
-  name: Jiahui Jiang
+  name: Jiahui Jiang - JJ
   #email:
-  uri: https://jiahuijiang.github.io/
+  uri: https://jjjiahui.life/
 
 # Important settings (change at own risk)
 
@@ -104,7 +104,7 @@ assets:
     - node_modules
     - assets/javascripts
     - assets/stylesheets
-  baseurl: https://jiahuijiang.github.io/
+  baseurl: https://jjjiahui.life/
 
 collections:
   my_tags:
