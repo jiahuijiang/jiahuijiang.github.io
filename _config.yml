@@ -32,7 +32,7 @@ social_links:
 author:
   name: Jiahui Jiang - JJ
   #email:
-  uri: https://jjjiahui.life/
+  uri: https://jiahuijiang.github.io/
 
 # Important settings (change at own risk)
 
@@ -104,7 +104,7 @@ assets:
     - node_modules
     - assets/javascripts
     - assets/stylesheets
-  baseurl: https://jjjiahui.life/
+  baseurl: https://jiahuijiang.github.io/
 
 collections:
   my_tags:
