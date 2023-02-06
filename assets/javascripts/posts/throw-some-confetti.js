@@ -10,7 +10,7 @@ let sketchConfetti = function (p) {
 		const canvasLength = Number(document.querySelector('.input').getAttribute('confetti-canvas-length') ?? length)
 		p.createCanvas(canvasLength, canvasLength);
 
-		for (let i = 0; i < 300; i++) {
+		for (let i = 0; i < canvasLength / 2; i++) {
 			confetti.push(new Confetti());
 		}
 	}

@@ -13,13 +13,23 @@ tags: [coding]
 <script src="/assets/javascripts/p5.min.js"></script>
 </head>
 <body>
-Snowfall
+<header>
+<h1>Snowfall</h1>
+</header>
 <div id="snowfall-parent">
   <script src="/assets/javascripts/posts/snowfall.js"></script>
 </div>
-Throw some confetti (move your mouse around, now faster..)
+<a target="_blank" class="no-text-decoration" href="snowfall"><u>more</u></a>
+<br/>
+<br/>
+<header>
+<h1>Throw some confetti</h1>
+</header>
 <div id="confetti-parent">
   <script src="/assets/javascripts/posts/throw-some-confetti.js"></script>
 </div>
+move your mouse around, now faster..
+<br/>
+<a target="_blank" class="no-text-decoration" href="confetti"><u>more</u></a>
 </body>
 </html>

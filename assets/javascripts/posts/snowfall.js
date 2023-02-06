@@ -15,7 +15,7 @@ let sketchSnowfall = function (p) {
 		const opacity = Number(document.querySelector('.input').getAttribute('snowfall-opacity') ?? '0')
 		p.background(opacity, 200);
 
-		if (snowflakes.length < 350) {
+		if (snowflakes.length < p.canvas.height) {
 			for (let i = 0; i < 1; i++) {
 				snowflakes.push(new Snowflake());
 			}
