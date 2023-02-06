@@ -29,11 +29,18 @@
       </li>
     {% endif %}
     {% if site.social_links.linkedin %}
-      <li>
+    <li>
         <a href="https://www.linkedin.com/in/{{ site.social_links.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile">
           <i class="fa fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
+    {% endif %}
+    {% if site.social_links.instagram %}
+    <li>
+      <a href="https://www.instagram.com/{{ site.social_links.instagram }}" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram Profile">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </li>
     {% endif %}
     {% if site.social_links.github %}
       <li>

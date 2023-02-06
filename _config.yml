@@ -14,6 +14,7 @@ local_fonts: true # Change to true if you wish to use local fonts
 rss_enabled: false # Change to false if not
 social_links:
   # facebook: # Add your Facebook handle
+  instagram: jj.alittleginger # instagram
   github: jiahuijiang # Add your GitHub handle
   linkedin: jiahui-j # Add your LinkedIn handle
   #twitter:  # Add your Twitter handle
