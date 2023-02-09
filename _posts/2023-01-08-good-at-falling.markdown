@@ -4,7 +4,6 @@ id: good-at-falling
 title: "Good at falling"
 icon: fa-snowflake-o
 preview: good-at-falling-preview
-permalink: /projects/good-at-falling
 tags: [coding]
 ---
 
