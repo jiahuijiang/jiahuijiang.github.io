@@ -19,7 +19,7 @@ tags: [coding]
 <div id="snowfall-parent">
   <script src="/assets/javascripts/posts/snowfall.js"></script>
 </div>
-<a target="_blank" class="no-text-decoration" href="snowfall"><u>more</u></a>
+<a target="_blank" class="no-text-decoration" href="/projects/good-at-falling/snowfall"><u>more</u></a>
 <br/>
 <br/>
 <header>
@@ -30,6 +30,6 @@ tags: [coding]
 </div>
 move your mouse around, now faster..
 <br/>
-<a target="_blank" class="no-text-decoration" href="confetti"><u>more</u></a>
+<a target="_blank" class="no-text-decoration" href="/projects/good-at-falling/confetti"><u>more</u></a>
 </body>
 </html>
