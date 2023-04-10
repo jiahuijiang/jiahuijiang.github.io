@@ -61,7 +61,6 @@ The mechanism of the game is straight-forward - to play the game, 'the fools' ha
 These FSR sensors are used as pull-down resistors.
 When "the fool" is standing on the ground, the FSR sensors detect the weight and the resistance decreases. The output voltage is low. When "the fool" jumps, FSR returns back to their max resistance and the output voltage is back high.
 
-
 <div style="margin-bottom: 30px">
     <img src="https://cdn-learn.adafruit.com/assets/assets/000/000/435/original/force___flex_fsrpulldownsch.gif?1447975571" weight="400" height="400" style="margin: 0 auto" />
 </div>
