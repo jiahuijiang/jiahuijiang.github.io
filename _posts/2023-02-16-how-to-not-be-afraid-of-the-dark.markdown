@@ -2,7 +2,7 @@
 layout: post-centered
 title: "How to not be afraid of the dark - a breathing sloth plush"
 icon: fa-snowflake-o
-tags: [craft]
+tags: [art, hardware]
 thumbnail: /assets/images/posts/breathing-sloths/sloth.jpg
 ---
 
