@@ -13,7 +13,11 @@ thumbnail: /assets/images/posts/kinetic-dino-game/flamingo.jpg
 Last month was my friend Iain's birthday.
 <br/>
 Fun and enabling as usual, Iain gave us a prompt to do installs for his party taking place on April Fool's day - "the fool" tarot card.
-<br/>
+
+<div style="margin-bottom: 30px">
+    <img src="https://www.biddytarot.com/wp-content/uploads/2018/02/0-fool.png" weight="200" height="200" style="margin: 0 auto" />
+</div>
+
 On "the fool" tarot card, a jovial young man stands on the edge of a cliff. He's about to set out to his adventure, but he has no idea on what's right in front of him. 
 <br/>
 The card resembles innocence, spontaneity but also risk-taking and recklessness.
@@ -51,7 +55,7 @@ This is a game where you really need to be silly to overcome obstacles.
 The mechanism of the game is straight-forward - to play the game, 'the fools' have to wear this pair of slippers. There are one FSR pressure sensor at the bottom of each slipper.
 
 <div style="margin-bottom: 30px">
-    <img src="/assets/images/posts/kinetic-dino-game/sensor.jpeg" weight="300" height="300" style="margin: 0 auto" />
+    <img src="/assets/images/posts/kinetic-dino-game/sensor.jpeg" weight="200" height="200" style="margin: 0 auto" />
 </div>
 
 These FSR sensors are used as pull-down resistors.
