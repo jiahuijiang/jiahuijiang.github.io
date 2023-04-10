@@ -66,7 +66,7 @@ When "the fool" is standing on the ground, the FSR sensors detect the weight and
 </div>
 
 I'm using <a href="https://www.adafruit.com/product/4333">Adafruit Playground Bluefruit</a> as the development board. You can find the source code <a href="https://github.com/jiahuijiang/adafruit-projects/blob/main/dino-game/code.py">here</a>.
-</br>
+<br/>
 The source code for local hosted t-rex-runner game can be found <a href="https://github.com/jiahuijiang/t-rex-runner/tree/jj/simplied">here</a>. Note that this is a forked version of the original game. I've made some changes to the game to make it easier to control the game through jumping.
 
 Hope you have fun jumping and releasing happy hormones!
