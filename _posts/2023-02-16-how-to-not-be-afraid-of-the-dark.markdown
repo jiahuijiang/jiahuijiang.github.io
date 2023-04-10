@@ -28,7 +28,7 @@ Sloths are what I aspire to be. They are kind and happy. Their arms always open 
 
 <div style="height:321px; width:500px; overflow: hidden; margin: 0 auto">
   <iframe height="321" width="500"
-    src="https://www.youtube.com/embed/fwUVL0PF0sg?theme=dark&autoplay=1&keyboard=1&autohide=2&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=0"
+    src="https://www.youtube.com/embed/fwUVL0PF0sg?theme=dark&autoplay=0&keyboard=1&autohide=2&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=0"
     sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
     style="height:441px; background:#000000; bottom: 61px; position: relative;"
     frameborder="0">
