@@ -62,7 +62,7 @@ These FSR sensors are used as pull-down resistors.
 When "the fool" is standing on the ground, the FSR sensors detect the weight and the resistance decreases. The output voltage is low. When "the fool" jumps, FSR returns back to their max resistance and the output voltage is back high.
 
 <div style="margin-bottom: 30px">
-    <img src="https://cdn-learn.adafruit.com/assets/assets/000/000/435/original/force___flex_fsrpulldownsch.gif?1447975571" weight="400" height="400" style="margin: 0 auto" />
+    <img src="https://cdn-learn.adafruit.com/assets/assets/000/000/435/original/force___flex_fsrpulldownsch.gif?1447975571" weight="200" height="200" style="margin: 0 auto" />
 </div>
 
 I'm using <a href="https://www.adafruit.com/product/4333">Adafruit Playground Bluefruit</a> as the development board. You can find the source code <a href="https://github.com/jiahuijiang/adafruit-projects/blob/main/dino-game/code.py">here</a>.
