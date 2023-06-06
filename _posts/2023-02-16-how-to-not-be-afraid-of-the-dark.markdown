@@ -50,6 +50,8 @@ I used two air pumps to get a shorter inhalation and a relaxing long exhalation.
     <img src="/assets/images/posts/breathing-sloths/mechanism.gif" weight="400" height="400" style="margin: 0 auto" />
 </div>
 
+The control source code can be found <a target="_blank" class="no-text-decoration" href="https://github.com/jiahuijiang/adafruit-projects/blob/main/breathing-sloth/main.py"><u>here</u></a>.
+
 Hope you enjoy the cuddling sloth &#129445;
 
 </body>
