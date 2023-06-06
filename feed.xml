@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jiahuijiang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jiahuijiang.github.io/" rel="alternate" type="text/html" /><updated>2023-06-05T23:52:03-04:00</updated><id>https://jiahuijiang.github.io/feed.xml</id><title type="html">Jiahui Jiang - JJ</title><subtitle>Jiahui's project site.</subtitle><author><name>Jiahui Jiang - JJ</name><uri>https://jiahuijiang.github.io/</uri></author><entry><title type="html">Only fools refuse to play - a kinetic dino game</title><link href="https://jiahuijiang.github.io/projects/only-fools-refuse-to-play" rel="alternate" type="text/html" title="Only fools refuse to play - a kinetic dino game" /><published>2023-04-01T00:00:00-04:00</published><updated>2023-04-10T09:54:58-04:00</updated><id>https://jiahuijiang.github.io/projects/only-fools-refuse-to-play</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/only-fools-refuse-to-play">&lt;html lang=&quot;en&quot;&gt;
+&lt;head /&gt;
+&lt;body&gt;
+
+Last month was my friend Iain's birthday.
+&lt;br /&gt;
+Fun and enabling as usual, Iain gave us a prompt to do installs for his party taking place on April Fool's day - &quot;the fool&quot; tarot card.
+
+&lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;https://www.biddytarot.com/wp-content/uploads/2018/02/0-fool.png&quot; weight=&quot;200&quot; height=&quot;200&quot; style=&quot;margin: 0 auto&quot; /&gt;
+&lt;/div&gt;
+
+On &quot;the fool&quot; tarot card, a jovial young man stands on the edge of a cliff. He's about to set out to his adventure, but he has no idea on what's right in front of him. 
+&lt;br /&gt;
+The card resembles innocence, spontaneity but also risk-taking and recklessness.
+&lt;br /&gt;
+&lt;br /&gt;
+As part of the prompt, Iain wanted a party where people can &quot;live life as though you were a child once again&quot;.
+&lt;br /&gt;
+One of my happiness childhood memories was jumping on the trampolines. I'm a firm believer that life is better with all the dopamine released from hopping around, no matter how it looks from the outside.
+&lt;br /&gt;
+&lt;br /&gt;
+Thus I made a little kinetic game that allows you to control the Chrome Dino game through jumping physically.
+
+&lt;div style=&quot;height:321px; width:500px; overflow: hidden; margin: 0 auto&quot;&gt;
+  &lt;iframe height=&quot;321&quot; width=&quot;500&quot; src=&quot;https://www.youtube.com/embed/niiHbAYI2P0?theme=dark&amp;amp;autoplay=1&amp;amp;keyboard=1&amp;amp;autohide=2&amp;amp;cc_load_policy=1&amp;amp;modestbranding=1&amp;amp;fs=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;mute=0&amp;amp;loop=0&quot; sandbox=&quot;allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation&quot; style=&quot;height:441px; background:#000000; bottom: 61px; position: relative;&quot; frameborder=&quot;0&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+Part of the fun is to dress up in the flamingo custom - the development board is in a small sachet attached to the bird neck.
+&lt;br /&gt;
+This is a game where you really need to be silly to overcome obstacles.
+
+&lt;div style=&quot;height:321px; width:500px; overflow: hidden; margin: 0 auto&quot;&gt;
+  &lt;iframe height=&quot;321&quot; width=&quot;500&quot; src=&quot;https://youtube.com/embed/qDHPOWUjRB4?theme=dark&amp;amp;autoplay=0&amp;amp;keyboard=1&amp;amp;autohide=2&amp;amp;cc_load_policy=1&amp;amp;modestbranding=1&amp;amp;fs=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;mute=0&amp;amp;loop=0&quot; sandbox=&quot;allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation&quot; style=&quot;height:441px; background:#000000; bottom: 61px; position: relative;&quot; frameborder=&quot;0&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+The mechanism of the game is straight-forward - to play the game, 'the fools' have to wear this pair of slippers. There are one FSR pressure sensor at the bottom of each slipper.
+
+&lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/kinetic-dino-game/sensor.jpeg&quot; weight=&quot;200&quot; height=&quot;200&quot; style=&quot;margin: 0 auto&quot; /&gt;
+&lt;/div&gt;
+
+These FSR sensors are used as pull-down resistors.
+When &quot;the fool&quot; is standing on the ground, the FSR sensors detect the weight and the resistance decreases. The output voltage is low. When &quot;the fool&quot; jumps, FSR returns back to their max resistance and the output voltage is back high.
+
+&lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;https://cdn-learn.adafruit.com/assets/assets/000/000/435/original/force___flex_fsrpulldownsch.gif?1447975571&quot; weight=&quot;200&quot; height=&quot;200&quot; style=&quot;margin: 0 auto&quot; /&gt;
+&lt;/div&gt;
+
+I'm using &lt;a href=&quot;https://www.adafruit.com/product/4333&quot;&gt;Adafruit Playground Bluefruit&lt;/a&gt; as the development board. You can find the source code &lt;a href=&quot;https://github.com/jiahuijiang/adafruit-projects/blob/main/dino-game/code.py&quot;&gt;here&lt;/a&gt;.
+&lt;br /&gt;
+The source code for local hosted t-rex-runner game can be found &lt;a href=&quot;https://github.com/jiahuijiang/t-rex-runner/tree/jj/simplied&quot;&gt;here&lt;/a&gt;. Note that this is a forked version of the original game. I've made some changes to the game to make it easier to control the game through jumping.
+&lt;br /&gt;
+&lt;br /&gt;
+Have fun jumping!
+
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang - JJ</name><uri>https://jiahuijiang.github.io/</uri></author><category term="art" /><category term="hardware" /><summary type="html"></summary></entry><entry><title type="html">How to not be afraid of the dark - a breathing sloth plush</title><link href="https://jiahuijiang.github.io/projects/how-to-not-be-afraid-of-the-dark" rel="alternate" type="text/html" title="How to not be afraid of the dark - a breathing sloth plush" /><published>2023-02-16T00:00:00-05:00</published><updated>2023-06-05T23:51:41-04:00</updated><id>https://jiahuijiang.github.io/projects/how-to-not-be-afraid-of-the-dark</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/how-to-not-be-afraid-of-the-dark">&lt;html lang=&quot;en&quot;&gt;
+&lt;head /&gt;
+&lt;body&gt;
+
+&lt;div style=&quot;height:321px; width:500px; overflow: hidden; margin: 0 auto&quot;&gt;
+  &lt;iframe height=&quot;321&quot; width=&quot;500&quot; src=&quot;https://youtube.com/embed/LackJ0SI-6E?theme=dark&amp;amp;autoplay=1&amp;amp;keyboard=1&amp;amp;autohide=2&amp;amp;cc_load_policy=1&amp;amp;modestbranding=1&amp;amp;fs=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;mute=0&amp;amp;loop=0&quot; sandbox=&quot;allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation&quot; style=&quot;height:441px; background:#000000; bottom: 61px; position: relative;&quot; frameborder=&quot;0&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+Growing up my parents worked long hours and often wouldn’t be back home by my bedtime.
+Alone in the dark, the only source of solace was from my pillow-side stuffed animals — the companions who protected and comforted me.
+&lt;br /&gt;
+As I transitioned into adulthood, I relinquished my childhood comforts and embraced what I believed were necessary for adulthood — strength and self-sufficiency. Yet, even as an adult, I yearn for a cuddly comforting presence in moments of aloneness.
+&lt;br /&gt;
+Sloths are what I aspire to be. They are kind and happy. Their arms always open wide, offering warmth and ease.
+
+&lt;div style=&quot;height:321px; width:500px; overflow: hidden; margin: 0 auto&quot;&gt;
+  &lt;iframe height=&quot;321&quot; width=&quot;500&quot; src=&quot;https://www.youtube.com/embed/fwUVL0PF0sg?theme=dark&amp;amp;autoplay=0&amp;amp;keyboard=1&amp;amp;autohide=2&amp;amp;cc_load_policy=1&amp;amp;modestbranding=1&amp;amp;fs=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;mute=0&amp;amp;loop=0&quot; sandbox=&quot;allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation&quot; style=&quot;height:441px; background:#000000; bottom: 61px; position: relative;&quot; frameborder=&quot;0&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+
+I made this breathing sloth plush for &lt;a target=&quot;_blank&quot; class=&quot;no-text-decoration&quot; href=&quot;https://www.instagram.com/workinprogressnyc/&quot;&gt;&lt;u&gt;@workinprogressnyc&lt;/u&gt;&lt;/a&gt;’s Valentine’s day showcase
+at &lt;a target=&quot;_blank&quot; class=&quot;no-text-decoration&quot; href=&quot;https://www.instagram.com/personanycstudio/&quot;&gt;&lt;u&gt;Persona&lt;/u&gt;&lt;/a&gt;. The theme was self-healing and self-love. I found it absolutely magically watching people’s eyes open wide when they felt the breathing, then smiling and enjoying a moment with the sloths in silence.
+
+&lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/breathing-sloths/event-night.jpg&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+&lt;/div&gt;
+
+The breathing is mimicked by an air balloon connected to two air pumps and a valve.
+&lt;br /&gt;
+I used two air pumps to get a shorter inhalation and a relaxing long exhalation.
+
+&lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/breathing-sloths/mechanism.gif&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+&lt;/div&gt;
+
+The control source code can be found &lt;a target=&quot;_blank&quot; class=&quot;no-text-decoration&quot; href=&quot;https://github.com/jiahuijiang/adafruit-projects/blob/main/breathing-sloth/main.py&quot;&gt;&lt;u&gt;here&lt;/u&gt;&lt;/a&gt;.
+
+Hope you enjoy the cuddling sloth &amp;#129445;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang - JJ</name><uri>https://jiahuijiang.github.io/</uri></author><category term="art" /><category term="hardware" /><summary type="html"></summary></entry><entry><title type="html">Good at falling</title><link href="https://jiahuijiang.github.io/projects/good-at-falling" rel="alternate" type="text/html" title="Good at falling" /><published>2023-01-08T00:00:00-05:00</published><updated>2023-02-11T01:55:39-05:00</updated><id>https://jiahuijiang.github.io/projects/good-at-falling</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/good-at-falling">&lt;html&gt;
+&lt;head&gt;
+&lt;div class=&quot;input&quot; snowfall-parent=&quot;snowfall-parent&quot; snowfall-canvas-length=&quot;400&quot; confetti-canvas-length=&quot;400&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;/assets/javascripts/p5.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;h1&gt;Snowfall&lt;/h1&gt;
+&lt;/header&gt;
+&lt;div id=&quot;snowfall-parent&quot;&gt;
+  &lt;script src=&quot;/assets/javascripts/posts/snowfall.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;a target=&quot;_blank&quot; class=&quot;no-text-decoration&quot; href=&quot;/projects/good-at-falling/snowfall&quot;&gt;&lt;u&gt;more&lt;/u&gt;&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;header&gt;
+&lt;h1&gt;Throw some confetti&lt;/h1&gt;
+&lt;/header&gt;
+&lt;div id=&quot;confetti-parent&quot;&gt;
+  &lt;script src=&quot;/assets/javascripts/posts/throw-some-confetti.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+move your mouse around, now faster..
+&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; class=&quot;no-text-decoration&quot; href=&quot;/projects/good-at-falling/confetti&quot;&gt;&lt;u&gt;more&lt;/u&gt;&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang - JJ</name><uri>https://jiahuijiang.github.io/</uri></author><category term="coding" /><summary type="html">Snowfall more Throw some confetti move your mouse around, now faster.. more</summary></entry><entry><title type="html">Clay earrings</title><link href="https://jiahuijiang.github.io/projects/clay-earrings" rel="alternate" type="text/html" title="Clay earrings" /><published>2022-12-08T00:00:00-05:00</published><updated>2023-01-24T19:40:13-05:00</updated><id>https://jiahuijiang.github.io/projects/clay-earrings</id><content type="html" xml:base="https://jiahuijiang.github.io/projects/clay-earrings">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Clay earrings can be baked with home oven. It reminds me of making clay animals with play-doh as a kid.
+I was surprised by how vibrant the color remains even after baking.&lt;br /&gt;
+&lt;br /&gt;
+
+
+  &lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/clay-earrings/tools_and_materials.png&quot; alt=&quot;tools_and_materials&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+    Tools and materials
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/clay-earrings/cold_pizza.png&quot; alt=&quot;cold_pizza&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+    Cold pizza
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/clay-earrings/flower.png&quot; alt=&quot;flower&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+    Flower
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-bottom: 30px&quot;&gt;
+    &lt;img src=&quot;/assets/images/posts/clay-earrings/collections.png&quot; alt=&quot;collections&quot; weight=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 0 auto&quot; /&gt;
+    Others
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name>Jiahui Jiang - JJ</name><uri>https://jiahuijiang.github.io/</uri></author><category term="craft" /><summary type="html">Title Clay earrings can be baked with home oven. It reminds me of making clay animals with play-doh as a kid. I was surprised by how vibrant the color remains even after baking.</summary></entry></feed>
