@@ -10,13 +10,13 @@ related_posts: false
 related_publications: true
 ---
 
-This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does. That means simple citation like {% cite einstein1950meaning %}, multiple citations like {% cite einstein1950meaning einstein1905movement %}, long references like {% reference einstein1905movement %} or also quotes:
+This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does. 
 
-{% quote einstein1905electrodynamics %}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-sed do eiusmod tempor.
+Note: To use citation tags like `cite`, `reference`, and `quote`, you need to install the jekyll-scholar gem and configure it in your `_config.yml`. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing.
-{% endquote %}
+Example usage (requires jekyll-scholar):
+- Simple citation: `{% raw %}{% cite einstein1950meaning %}{% endraw %}`
+- Multiple citations: `{% raw %}{% cite einstein1950meaning einstein1905movement %}{% endraw %}`
+- Long references: `{% raw %}{% reference einstein1905movement %}{% endraw %}`
 
 If you would like something more academic, check the [distill style post]({% post_url 2018-12-22-distill %}).

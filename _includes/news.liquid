@@ -1,0 +1,24 @@
+{% comment %}
+  News include file.
+  This displays news items when included.
+{% endcomment %}
+
+{% if include.limit %}
+  {% assign news_items = site.data.news | limit: 5 %}
+{% else %}
+  {% assign news_items = site.data.news %}
+{% endif %}
+
+{% if news_items.size > 0 %}
+  <ul class="news-list">
+    {% for item in news_items %}
+      <li>
+        <span class="news-date">{{ item.date | date: "%B %d, %Y" }}</span>
+        <span class="news-content">{{ item.content }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No news items available.</p>
+{% endif %}
+

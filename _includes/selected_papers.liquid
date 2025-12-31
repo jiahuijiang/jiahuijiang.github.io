@@ -1,0 +1,16 @@
+{% comment %}
+  Selected papers include file.
+  This displays selected publications when page.selected_papers is true.
+{% endcomment %}
+
+{% if page.selected_papers %}
+  {% assign selected_papers = site.publications | where: "selected", true %}
+  {% if selected_papers.size > 0 %}
+    <h2>Selected Publications</h2>
+    <div class="publications">
+      <!-- Selected publications would be displayed here -->
+      <!-- To enable this feature, configure publications in _data/cv.yml or use jekyll-scholar -->
+    </div>
+  {% endif %}
+{% endif %}
+

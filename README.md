@@ -1,1 +1,1 @@
-Forked from https://alshedivat.github.io/al-folio/
+Forked from https://github.com/alshedivat/al-folio
