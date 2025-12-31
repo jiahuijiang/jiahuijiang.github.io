@@ -1,8 +1,7 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Creative projects
 nav: true
 nav_order: 3
 display_categories: [art, coding, craft]

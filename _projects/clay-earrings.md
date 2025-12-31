@@ -13,17 +13,17 @@ I was surprised by how vibrant the color remains even after baking.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/clay-earrings/tools_and_materials.png" title="Tools and materials" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/clay-earrings/tools_and_materials.png" title="Tools and materials" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/clay-earrings/cold_pizza.png" title="Cold pizza" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/clay-earrings/cold_pizza.png" title="Cold pizza" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/clay-earrings/flower.png" title="Flower" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/clay-earrings/flower.png" title="Flower" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/clay-earrings/collections.png" title="Others" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/clay-earrings/collections.png" title="Others" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
 </div>

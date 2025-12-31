@@ -38,7 +38,7 @@ at <a target="_blank" class="no-text-decoration" href="https://www.instagram.com
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/breathing-sloths/event-night.jpg" title="Event night" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/breathing-sloths/event-night.jpg" title="Event night" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
 </div>
 
@@ -48,7 +48,7 @@ I used two air pumps to get a shorter inhalation and a relaxing long exhalation.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/breathing-sloths/mechanism.gif" title="Mechanism" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/breathing-sloths/mechanism.gif" title="Mechanism" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
 </div>
 

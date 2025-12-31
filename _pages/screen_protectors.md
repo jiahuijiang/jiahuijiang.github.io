@@ -5,7 +5,7 @@ description: I'm weirdly good at putting on screen protectors.
 permalink: /screen_protectors
 nav: true
 nav_order: 5
-image-dir: /assets/images/posts/screen-protectors/
+image-dir: assets/images/posts/screen-protectors/
 ---
 
 <div class="post">
@@ -23,7 +23,7 @@ image-dir: /assets/images/posts/screen-protectors/
         {% assign img_path = page.image-dir | append: i | append: '.jpg' %}
         {% assign img_title = 'Screen protector ' | append: i %}
         <div class="col mb-4">
-          {% include figure.liquid path=img_path title=img_title class="img-fluid rounded z-depth-1" %}
+          {% include figure.liquid path=img_path title=img_title class="img-fluid rounded z-depth-1" avoid_scaling=true %}
         </div>
       {% endfor %}
     </div>

@@ -52,11 +52,11 @@
             </a>
           </li>
 
-          <!-- Blog -->
-          <li class="nav-item {% if page.url contains '/blog' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/blog/' | relative_url }}">
+          <!-- Writings -->
+          <li class="nav-item {% if page.url contains '/writings' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/writings/' | relative_url }}">
               Writings
-              {% if page.url contains '/blog' %}
+              {% if page.url contains '/writings' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -81,14 +81,6 @@
               {% endif %}
             </a>
           </li>
-          {% if site.search_enabled %}
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          {% endif %}
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

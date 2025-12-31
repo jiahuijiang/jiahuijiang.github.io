@@ -47,7 +47,7 @@ repo_trophies:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: false
-socials_in_search: true
+socials_in_search: false
 posts_in_search: true
 bib_search: true
 
@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Writings # blog_name will be displayed in your blog page
 blog_description:
-permalink: /blog/:year/:title/
+permalink: /writings/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -238,9 +238,9 @@ jekyll-archives:
   posts:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+      year: "/writings/:year/"
+      tags: "/writings/:type/:name/"
+      categories: "/writings/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 

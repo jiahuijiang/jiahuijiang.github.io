@@ -62,7 +62,7 @@ The mechanism of the game is straight-forward - to play the game, 'the fools' ha
 
 <div class="row justify-content-center">
     <div class="col-sm-6 col-md-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/images/posts/kinetic-dino-game/sensor.jpeg" title="FSR sensor" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/images/posts/kinetic-dino-game/sensor.jpeg" title="FSR sensor" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
     </div>
 </div>
 
