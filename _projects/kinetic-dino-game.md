@@ -5,6 +5,7 @@ description: A kinetic game that allows you to control the Chrome Dino game thro
 img: assets/images/posts/kinetic-dino-game/flamingo.jpg
 importance: 4
 category: art
+time: April 2024
 ---
 
 Last month was my friend Iain's birthday.

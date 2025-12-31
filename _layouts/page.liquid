@@ -11,7 +11,12 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    <p class="post-description" {% if page.time %}style="margin-bottom: 0.5rem;"{% endif %}>{{ page.description }}</p>
+    {% if page.time %}
+      <p class="post-meta" style="font-size: 0.9rem; color: #6c757d; margin-top: 0; margin-bottom: 1.5rem;">
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {{ page.time }}
+      </p>
+    {% endif %}
   </header>
 
   <article>

@@ -3,8 +3,9 @@ layout: page
 title: Clay earrings
 description: Clay earrings can be baked with home oven. It reminds me of making clay animals with play-doh as a kid.
 img: assets/images/posts/clay-earrings/cold_pizza.png
-importance: 1
+importance: 10
 category: craft
+visible: false
 ---
 
 Clay earrings can be baked with home oven. It reminds me of making clay animals with play-doh as a kid.

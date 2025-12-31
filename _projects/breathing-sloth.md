@@ -1,10 +1,11 @@
 ---
 layout: page
-title: How to not be afraid of the dark - a breathing sloth plush
+title: How to not be afraid of the dark - a breathing sloth
 description: A breathing sloth plush made for Valentine's day showcase
 img: assets/images/posts/breathing-sloths/sloth.jpg
-importance: 3
+importance: 2
 category: art
+time: February 2023
 ---
 
 <div style="height:321px; width:500px; overflow: hidden; margin: 0 auto">

@@ -3,8 +3,9 @@ layout: page
 title: Good at falling
 description: Interactive snowfall and confetti projects
 img: assets/images/posts/good-at-falling/snow.png
-importance: 2
+importance: 5
 category: coding
+time: February 2023
 ---
 
 <div class="input" snowfall-parent="snowfall-parent" snowfall-canvas-length="400" confetti-canvas-length="400" ></div>
