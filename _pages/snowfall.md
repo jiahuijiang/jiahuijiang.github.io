@@ -14,4 +14,3 @@ permalink: /projects/good-at-falling/snowfall
     <script src="/assets/javascripts/posts/snowfall.js"></script>
 </body>
 </html>
-

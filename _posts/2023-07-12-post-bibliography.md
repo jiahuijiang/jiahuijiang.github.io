@@ -10,11 +10,12 @@ related_posts: false
 related_publications: true
 ---
 
-This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does. 
+This post shows how to add bibliography to simple blog posts. We support every citation style that [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) does.
 
-Note: To use citation tags like `cite`, `reference`, and `quote`, you need to install the jekyll-scholar gem and configure it in your `_config.yml`. 
+Note: To use citation tags like `cite`, `reference`, and `quote`, you need to install the jekyll-scholar gem and configure it in your `_config.yml`.
 
 Example usage (requires jekyll-scholar):
+
 - Simple citation: `{% raw %}{% cite einstein1950meaning %}{% endraw %}`
 - Multiple citations: `{% raw %}{% cite einstein1950meaning einstein1905movement %}{% endraw %}`
 - Long references: `{% raw %}{% reference einstein1905movement %}{% endraw %}`

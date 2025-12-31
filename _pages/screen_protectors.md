@@ -29,4 +29,3 @@ image-dir: /assets/images/posts/screen-protectors/
     </div>
   </article>
 </div>
-

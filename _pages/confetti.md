@@ -14,4 +14,3 @@ permalink: /projects/good-at-falling/confetti
     <script src="/assets/javascripts/posts/throw-some-confetti.js"></script>
 </body>
 </html>
-

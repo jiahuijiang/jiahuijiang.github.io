@@ -13,7 +13,7 @@
   <ul class="news-list">
     {% for item in news_items %}
       <li>
-        <span class="news-date">{{ item.date | date: "%B %d, %Y" }}</span>
+        <span class="news-date">{{ item.date | date: '%B %d, %Y' }}</span>
         <span class="news-content">{{ item.content }}</span>
       </li>
     {% endfor %}
@@ -21,4 +21,3 @@
 {% else %}
   <p>No news items available.</p>
 {% endif %}
-

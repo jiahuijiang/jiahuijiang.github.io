@@ -18,7 +18,7 @@ Fun and enabling as usual, Iain gave us a prompt to do installs for his party ta
     </div>
 </div>
 
-On "the fool" tarot card, a jovial young man stands on the edge of a cliff. He's about to set out to his adventure, but he has no idea on what's right in front of him. 
+On "the fool" tarot card, a jovial young man stands on the edge of a cliff. He's about to set out to his adventure, but he has no idea on what's right in front of him.
 <br/>
 The card resembles innocence, spontaneity but also risk-taking and recklessness.
 <br/>
@@ -81,4 +81,3 @@ The source code for local hosted t-rex-runner game can be found <a href="https:/
 <br/>
 <br/>
 Have fun jumping!
-

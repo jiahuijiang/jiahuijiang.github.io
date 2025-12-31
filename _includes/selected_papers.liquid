@@ -4,7 +4,7 @@
 {% endcomment %}
 
 {% if page.selected_papers %}
-  {% assign selected_papers = site.publications | where: "selected", true %}
+  {% assign selected_papers = site.publications | where: 'selected', true %}
   {% if selected_papers.size > 0 %}
     <h2>Selected Publications</h2>
     <div class="publications">
@@ -13,4 +13,3 @@
     </div>
   {% endif %}
 {% endif %}
-

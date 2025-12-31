@@ -27,4 +27,3 @@ I was surprised by how vibrant the color remains even after baking.
         {% include figure.liquid path="assets/images/posts/clay-earrings/collections.png" title="Others" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
