@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/baking";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-screen-protectors",
           title: "Screen Protectors",
           description: "I&#39;m weirdly good at putting on screen protectors.",
@@ -411,8 +404,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-how-to-not-be-afraid-of-the-dark-a-breathing-sloth-plush",
-          title: 'How to not be afraid of the dark - a breathing sloth plush...',
+            },},{id: "projects-how-to-not-be-afraid-of-the-dark-a-breathing-sloth",
+          title: 'How to not be afraid of the dark - a breathing sloth',
           description: "A breathing sloth plush made for Valentine&#39;s day showcase",
           section: "Projects",handler: () => {
               window.location.href = "/projects/breathing-sloth/";
@@ -431,6 +424,11 @@ ninja.data = [{
           description: "A kinetic game that allows you to control the Chrome Dino game through jumping physically",
           section: "Projects",handler: () => {
               window.location.href = "/projects/kinetic-dino-game/";
+            },},{id: "projects-tiny-cat",
+          title: 'Tiny cat',
+          description: "A tiny cat projection mapping project.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/projection-mapping-tiny-cat/";
             },},{
         id: 'social-email',
         title: 'email',
