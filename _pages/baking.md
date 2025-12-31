@@ -5,7 +5,7 @@ description: I like mixing flavors
 permalink: /baking
 nav: true
 nav_order: 4
-image-dir: /assets/images/posts/baking/
+image-dir: assets/images/posts/baking/
 baked-goods:
   - id: miso-cookies-with-furikake
     title: miso cookies with furikake
@@ -86,10 +86,10 @@ baked-goods:
             <div class="card-img-container">
               {% if item.url %}
                 <a target="_blank" href="{{item.url}}" title="{{item.title}}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                  {% include figure.liquid path=img_path title=item.title class="img-fluid" loading=loading_attr %}
+                  {% include figure.liquid path=img_path title=item.title class="img-fluid" loading=loading_attr avoid_scaling=true %}
                 </a>
               {% else %}
-                {% include figure.liquid path=img_path title=item.title class="img-fluid" loading=loading_attr %}
+                {% include figure.liquid path=img_path title=item.title class="img-fluid" loading=loading_attr avoid_scaling=true %}
               {% endif %}
             </div>
             <div class="card-body">
